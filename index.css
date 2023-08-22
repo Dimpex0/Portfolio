@@ -82,7 +82,7 @@ aside ul li a {
 
 #about div p {
     margin: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #about div p:first-of-type {
@@ -102,9 +102,11 @@ aside ul li a {
 }
 
 #about div p:nth-of-type(4) {
-    width: 50%;
+    width: 45%;
     font-size: 1rem;
     color: #9eacc3;
+    margin-top: 2rem;
+    line-height: 1.3rem;
 }
 
 #about div p:nth-of-type(4) a {
