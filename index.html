@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D. Dimitrov</title>
+    <script src="https://kit.fontawesome.com/0b1ca8c563.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -11,11 +12,71 @@
         <h1>D</h1>
 
         <ul>
-            <li><a href="#"><span>01.</span>About</a></li>
-            <li><a href="#"><span>02.</span>Experience</a></li>
+            <li><a href="#about"><span>01.</span>About</a></li>
+            <li><a href="#certificates"><span>02.</span>Certificates</a></li>
             <li><a href="#"><span>03.</span>Work</a></li>
             <li><a href="#"><span>04.</span>Contact</a></li>
         </ul>
     </nav>
+    <section id="about">
+        <aside>
+            <ul>
+                <li><a href="https://github.com/Dimpex0" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/dimitar-dimitrov-441834267" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/d___dimitrov/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="mailto:mitkodd2005@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </aside>
+        <div>
+            <p>Hi, my name is</p>
+            <p>Dimitar Dimitrov.</p>
+            <p>I build things for the web.</p>
+            <p>I'm a student at <a href="https://softuni.bg/" target="_blank">SoftUni</a> and specializing in Web development. Currently, I'm focused on honing and refining my skills, mostly using Django and React.</p>
+        </div>
+    </section>
+    <section id="certificates">
+        <div class="slide fade">
+            <img src="./images/certificates/python basics.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/python fundamentals.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/python advanced.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/python oop.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/html and css.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/js.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/python web basics.png" alt="">
+        </div>
+        <div class="slide fade">
+            <img src="./images/certificates/python web framework.png" alt="">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>

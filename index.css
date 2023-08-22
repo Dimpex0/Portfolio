@@ -1,17 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0a192f;
-    padding: 20px 40px;
+    padding: 2rem 4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 nav {
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #0a192f;
+    z-index: 1000;
 }
 
 nav h1 {
     border: 3px solid #3b9c96;
-    padding: 5px 10px;
+    padding: 0.3rem 0.7rem;
     color: #3b9c96;
 }
 
@@ -21,15 +31,138 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 nav ul li a span {
     color: #3b9c96;
-    margin-right: 7px;
+    margin-right: 0.6rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #9eacc3;
+}
+
+#about {
+    display: flex;
+    gap: 10rem;
+    height: 80vh;
+}
+
+aside {
+    margin-top: auto;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    width: 2rem;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #9eacc3;
+    font-size: 2rem;
+}
+
+#about div p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+#about div p:first-of-type {
+    color: #3b9c96; 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+
+#about div p:nth-of-type(2) {
+    font-size: 5rem;
+    color: #afbacc;
+}
+
+#about div p:nth-of-type(3) {
+    font-size: 5rem;
+    color: #9eacc3;
+}
+
+#about div p:nth-of-type(4) {
+    width: 50%;
+    font-size: 1rem;
+    color: #9eacc3;
+}
+
+#about div p:nth-of-type(4) a {
+    color: #3b9c96;
+}
+
+#certificates {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
