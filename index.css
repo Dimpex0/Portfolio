@@ -15,6 +15,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
+    left: 0;
     background-color: #0a192f;
     z-index: 1000;
 }
@@ -25,13 +26,33 @@ nav h1 {
     color: #3b9c96;
 }
 
-nav ul {
+.regular {
     list-style-type: none;
     margin-left: auto;
     padding: 0;
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+.open {
+    list-style-type: none;
+    margin-left: auto;
+    padding: 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+}
+
+.closebtn {
+    display: none;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 nav ul li a span {
@@ -50,10 +71,18 @@ nav ul li a:hover {
     border: 3px solid white;
 }
 
+.fa-bars {
+    display: none;
+    font-size: 3rem;
+    color: white;
+    margin-left: auto;
+}
+
 #about {
     display: flex;
     gap: 10rem;
     height: 80vh;
+    margin-bottom: 10rem;
 }
 
 aside {
@@ -212,4 +241,85 @@ aside ul li a {
 
 .image-section img {
     width: 1000px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    #about div p:nth-of-type(2), #about div p:nth-of-type(3) {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .image-section img {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .image-section img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #about div p:nth-of-type(4) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .image-section img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    #about {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .image-section img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #about div p:nth-of-type(2), #about div p:nth-of-type(3) {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .fa-bars {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    #about div p:nth-of-type(2), #about div p:nth-of-type(3) {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .image-section img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .image-section img {
+        width: 150px;
+    }
 }
