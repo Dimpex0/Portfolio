@@ -178,3 +178,38 @@ aside ul li a {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+.work-navigation h2 {
+    color: white;
+}
+
+.work-navigation ul {
+    color: #3b9c96;
+}
+
+.work-navigation ul li a {
+    color: #3b9c96;
+}
+
+.work-sections {
+    margin-top: 75px;
+}
+
+.work-section h3 {
+    color: #9eacc3;
+}
+
+.work-section p {
+    color: white;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.image-section img {
+    width: 1000px;
+}
