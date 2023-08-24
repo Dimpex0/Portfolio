@@ -49,7 +49,11 @@ function closeNav() {
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      
+
+      if (closeBtn.style.display === 'block') {
+        closeNav();
+      }
+
       const targetSection = document.querySelector(this.getAttribute('href'));
       
       if (targetSection) {
